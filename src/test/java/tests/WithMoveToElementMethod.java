@@ -15,6 +15,8 @@ public class WithMoveToElementMethod extends TestBase {
     public void test1(){
 
 
+        //I use moveToElement method for third step
+
         WebElement javaScriptTab = Driver.getDriver().findElement(By.xpath("//div[text()='JavaScript']"));
         javaScriptTab.click();
         SleepMethod.sleep(2);
@@ -31,6 +33,7 @@ public class WithMoveToElementMethod extends TestBase {
         newTodoInput.sendKeys("Second Item", Keys.ENTER);
         SleepMethod.sleep(2);
 
+        //moveToElement Method
         Actions actions = new Actions(Driver.getDriver());
 
         WebElement secondItem = Driver.getDriver().findElement(By.xpath("//label[text()='Second Item']"));
