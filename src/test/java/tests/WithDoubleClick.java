@@ -15,7 +15,7 @@ public class WithDoubleClick extends TestBase {
     public void test1(){
 
 
-        //I use moveToElement method for third step
+        //I use double click to edit for third step
 
         WebElement javaScriptTab = Driver.getDriver().findElement(By.xpath("//div[text()='JavaScript']"));
         javaScriptTab.click();
@@ -33,7 +33,7 @@ public class WithDoubleClick extends TestBase {
         newTodoInput.sendKeys("Second Item", Keys.ENTER);
         SleepMethod.sleep(2);
 
-        //moveToElement Method
+
         Actions actions = new Actions(Driver.getDriver());
 
         WebElement secondItem = Driver.getDriver().findElement(By.xpath("//label[text()='Second Item']"));
@@ -42,11 +42,7 @@ public class WithDoubleClick extends TestBase {
 
 
 
-        //WebElement secondItemEdit = Driver.getDriver().findElement(By.xpath("( //input[@id='edit'])[2]"));
 
-      /*  WebElement xButton = Driver.getDriver().findElement(By.xpath("(//button[@class='destroy style-scope td-item'])[2]"));
-        actions.moveToElement(xButton).click().perform();
-        SleepMethod.sleep(2);*/
 
 
 
